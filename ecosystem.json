@@ -10,7 +10,7 @@
   "deploy": {
     "production": {
       "user": "ubuntu",
-      "host": ["13.127.68.181"],
+      "host": ["13.126.234.80"],
       "ref": "origin/master",
       "repo": "git@github.com:MahidharP/CompleteNode.git",
       "path": "/home/ubuntu/ecomm",
