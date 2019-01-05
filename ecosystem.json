@@ -1,20 +1,18 @@
 {
-  "apps": [
-    {
-      "name": "ecomm",
-      "script": "./index.js",
-      "instances": 1,
-      "exec_mode": "cluster",
-      "error_file": "./logs/app_error.log",
-      "out_file": "./logs/app.log"
-    }
-  ],
+  "apps": [{
+    "name": "ecomm",
+    "script": "./index.js",
+    "instances": 1,
+    "exec_mode": "cluster",
+    "error_file": "./logs/app_error.log",
+    "out_file": "./logs/app.log"
+  }],
   "deploy": {
     "production": {
       "user": "ubuntu",
       "host": ["13.127.68.181"],
       "ref": "origin/master",
-      "repo": "git@github.com:dctacademy/sept-weekend-batch.git",
+      "repo": "git@github.com:MahidharP/CompleteNode.git",
       "path": "/home/ubuntu/ecomm",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
     }
